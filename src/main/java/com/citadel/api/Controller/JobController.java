@@ -1,6 +1,6 @@
 package com.citadel.api.Controller;
 
-import com.citadel.api.Domain.JobInfo;
+import com.citadel.api.Domain.Job;
 import com.citadel.api.Service.JobService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +18,7 @@ public class JobController {
     private final JobService jobService;
 
     @GetMapping("/")
-    public ResponseEntity<List<JobInfo>> getJobList() {
+    public ResponseEntity<List<Job>> getJobList() {
         return ResponseEntity.ok(jobService.getJobList());
     }
 }

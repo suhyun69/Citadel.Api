@@ -1,9 +1,9 @@
 package com.citadel.api.Service;
 
-import com.citadel.api.Domain.JobInfo;
+import com.citadel.api.Domain.Job;
 
 import java.util.List;
 
 public interface JobService {
-    List<JobInfo> getJobList();
+    List<Job> getJobList();
 }
