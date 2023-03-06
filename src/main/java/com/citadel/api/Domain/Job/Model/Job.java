@@ -1,6 +1,7 @@
-package com.citadel.api.Domain;
+package com.citadel.api.Domain.Job.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,16 +9,10 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 @NoArgsConstructor
-// @AllArgsConstructor
+@AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Job {
     private int no;
     private String name;
     private String skill;
-
-    public Job(int no, String name, String description) {
-        this.setNo(no);
-        this.setName(name);
-        this.setSkill(description);
-    }
 }

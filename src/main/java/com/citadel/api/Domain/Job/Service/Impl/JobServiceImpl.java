@@ -1,7 +1,7 @@
-package com.citadel.api.Service.impl;
+package com.citadel.api.Domain.Job.Service.Impl;
 
-import com.citadel.api.Domain.Job;
-import com.citadel.api.Service.JobService;
+import com.citadel.api.Domain.Job.Model.Job;
+import com.citadel.api.Domain.Job.Service.JobService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
